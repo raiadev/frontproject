@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:0px;
+    }
+    a{
+
+        text-decoration: none;
+        size: 15px;
+
+    }
+    header{
+        background-color: rgb(9, 9, 126);
+        padding: 10px;
+    }
+    .btn-abrir{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    nav{
+        height: 100%;
+        width: 0px;
+        background-color: rgb(9, 9, 126);
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        z-index: 1;
+        transition: width 0.3s;
+        
+    
+    }
+    nav a{
+         color: whitesmoke;
+         font-size: 25px;
+         display: block;
+         padding: 12px 10px 12px 32px;
+         
+    }
+
+    nav a:hover{
+        background-color: whitesmoke;
+        color:rgb(9, 9, 126)
+    }
+    main{
+        padding: 20px;
+        transition: margin-left 0.5s;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        background-image: url(./img/background.jpg);
+        background-position: center center;
+     }
+    .container{
+        font-style: oblique;
+    }
+    
+    footer{
+        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding-top: 5%;
+        
+        
+      
+    }
+    
+    footer img{
+        width: 50px;
+        height: 50px;
+        margin:0px;
+        padding-block-end: 1px;
+
+        
+   
+       
+    }
+    footer img:hover{
+        background-color: rgb(189, 174, 255);
+        border-radius: 50px;
+        border: 50px;
+    }
+
+    section{
+        text-align: center;
+        padding-right: 50px;
+        padding-top: 125px;
+        margin: 0%;
+       
+        
+     }
+     h1 {
+        
+        size: 15px;
+        color: rgb(255, 255, 255) ;
+        margin: 0px;
+        
+        
+        
+     }
+     h2{
+        font-size: 15px;
+        white-space: pre-wrap;
+        text-align: center;
+        padding-right: 50px;
+        color: rgb(255, 255, 255) ;
+        margin: 0px;
+       
+     }
+      h2 li{
+        list-style-type:square;
+        margin: 0px;
+        text-align: center;
+       
+
+
+       
+     }
+     .containerli {
+        padding-left: 20px;
+
+     }
+     .containerSoft{
+        padding-right: 30px;
+
+     }
+    
+     
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <a href = "#" class=" btn-abrir" onclick="abrirMenu()" > &#9776;  Abrir </a>     
+        
+       
+
+        
+        </header>
+
+    <nav id="menu">
+        
+      
+                     
+                <a href = "#"  onclick="fecharMenu()"> &times;  Fechar </a>
+                <a href = "index2.html" > Home </a>     
+                <a href = "sobre.html" > Sobre </a>     
+                <a href = "Habilidades.html" > Habilidades </a>
+                <a href = "contato.html" > Contato </a>         
+           
+        
+    </nav>
+    <main id="conteudo">
+        <section>
+            <h1 >Hard Skills</h1>
+             
+            <h2>
+                <li> Python</li>
+                <li class="containerli">JavaScript</li>
+                <li>MySQL</li>
+                
+            </h2>
+           
+ 
+
+        </section>
+
+        <section>
+            <h1 class="containerSoft">Soft Skills</h1>
+             
+            <h2>
+                   <li >Proatividade </li>
+                    <li>Comunicação eficaz </li>
+                   <li> Rápido aprendizado</li>
+                   <li> Empatia</li>
+                   <li> Criatividade</li>
+                   
+                
+                
+            </h2>
+    
+ 
+
+        </section>
+            
+    
+        </main>
+           
+          
+          
+
+    
+    
+    <script>
+         function abrirMenu(){
+    
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+            document.getElementById('footerContent').style.marginLeft = '250px';
+    
+    
+            
+         }
+         function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+            document.getElementById('footerContent').style.marginLeft = '0px';
+            
+    
+         }
+    </script>
+    
+    
+</body>
+</html>

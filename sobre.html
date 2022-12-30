@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin:0px;
+            background-image: url(./img/background.jpg);
+        background-position: center center;
+        }
+        a{
+    
+            text-decoration: none;
+            size: 15px;
+    
+        }
+        header{
+            background-color: rgb(9, 9, 126);
+            padding: 10px;
+            margin-top: 0px;
+        }
+        .btn-abrir{
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        nav{
+            height: 100%;
+            width: 0px;
+            background-color: rgb(9, 9, 126);
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            z-index: 1;
+            transition: width 0.3s;
+            
+        
+        }
+        nav a{
+             color: whitesmoke;
+             font-size: 25px;
+             display: block;
+             padding: 12px 10px 12px 32px ;
+             
+        }
+    
+        nav a:hover{
+            background-color: whitesmoke;
+            color:rgb(9, 9, 126)
+        }
+        main{
+            padding: 20px;
+            transition: margin-left 0.5s;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url(./img/background.jpg);
+            background-position: center center;
+            text-align: center;
+            margin-top: 0px;
+        }
+        section{
+            text-align: center;
+            padding-right: 50px;
+            padding-top: 0px;
+            margin: 0%;
+            margin-left: 0px;
+            right: 0px;
+           
+           
+            
+            
+            
+           
+            
+         }
+         h1 {
+            
+            size: 25px;
+            color: rgb(255, 254, 254) ;
+            margin: 0px;
+            background-color: rgb(9, 9, 126);
+            margin-top: 0px;
+            padding-top: 0px;
+           
+          
+            
+            
+         }
+         h2{
+            font-size: 20px;
+            white-space:pre-wrap;
+            font-family: 'Times New Roman', Times, serif;
+            padding-right: 50px;
+            color: rgb(255, 255, 255) ;
+            margin: 5px;
+            vertical-align: middle ;
+         }
+        .limedio {
+            text-indent: 50px;
+    
+        }
+        .licurso{
+            text-indent: 50px;
+    
+    
+        }
+        .infoComp{
+            text-indent: 20px;
+            size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+ <header>
+
+        <a href = "#" class=" btn-abrir" onclick="abrirMenu()" > &#9776;  Abrir </a>     
+        
+       
+
+        
+        </header>
+
+    <nav id="menu">
+        
+      
+                     
+                <a href = "#"  onclick="fecharMenu()"> &times;  Fechar </a>
+                <a href = "index2.html" > Home </a>     
+                <a href = "sobre.html" > Sobre </a>     
+                <a href = "Habilidades.html" > Habilidades </a>
+                <a href = "contato.html" > Contato </a>         
+           
+        
+    </nav>
+    <main id="conteudo">
+        <section>
+            <h1 >Objetivo profissional</h1>
+             
+            <h2> 
+                
+                A partir das minhas habilidades técnicas e comportamentais adquiridas, 
+                 pretendo obter a oportunidade de atuar em um estágio na área de programação 
+                 e desenvolver-me profissionalmente.
+                
+                
+            </h2>
+           
+ 
+
+        </section>
+
+        <section>
+            <h1> Formação </h1>
+             
+             <h2>
+                <li class="limedio">Ensino Médio
+                    Academia Santa Gertrudes - Olinda, Pernambuco
+                    Conclusão: 2019</li>
+                    <li class="licurso">Curso Formação Acelerada em Programação,
+                        Desenvolvedor Back-End - Softex Pernambuco
+                        Carga horária: 276 h/a
+                        Conclusão: 2022.2</li>
+                   
+                    
+       
+            </h2>
+    
+ 
+
+        </section>
+        <section>
+            <h1> Informações Complementares</h1>
+             
+             <h2>
+                <li class="infoComp"> Curso de língua inglesa - Programa de Línguas e Informática (PROLINFO)/
+                    Universidade de Pernambuco (UPE)
+                    Carga horária: 240 h/a
+                    Conclusão: 2017.2
+                    </li>
+                    
+                   
+                    
+       
+            </h2>
+    
+ 
+
+        </section>
+            
+    
+        </main>
+           
+          
+          
+
+    
+    
+    <script>
+         function abrirMenu(){
+    
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+            document.getElementById('footerContent').style.marginLeft = '250px';
+    
+    
+            
+         }
+         function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+            document.getElementById('footerContent').style.marginLeft = '0px';
+            
+    
+         }
+    </script>
+    
+</body>
+</html>

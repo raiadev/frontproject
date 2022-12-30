@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin:0px;
+            background-image: url(./img/background.jpg);
+            background-position: center center;
+            
+        }
+        a{
+    
+            text-decoration: none;
+            size: 15px;
+    
+        }
+        header{
+            background-color: rgb(9, 9, 126);
+            padding: 10px;
+        }
+        .btn-abrir{
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        nav{
+            height: 100%;
+            width: 0px;
+            background-color: rgb(9, 9, 126);
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            z-index: 1;
+            transition: width 0.3s;
+            
+        
+        }
+        nav a{
+             color: whitesmoke;
+             font-size: 25px;
+             display: block;
+             padding: 12px 10px 12px 32px ;
+             
+        }
+    
+        nav a:hover{
+            background-color: whitesmoke;
+            color:rgb(9, 9, 126)
+        }
+        
+        main {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0px;
+            white-space: none;
+            font-size: 12px;
+            justify-content: center;
+            vertical-align: middle;            
+
+
+
+        }
+        main img{
+            width: 50px;
+            height: 50px;
+            margin:0px 10px;
+            padding-block-end: 1px;
+            padding-left:600px;
+            padding-top:200px;
+            vertical-align: middle; 
+        }
+        h1{
+            justify-content: center;
+            padding-left:500px;
+            color: rgb(255, 255, 255);
+        }
+       </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <a href = "#" class=" btn-abrir" onclick="abrirMenu()" > &#9776;  Abrir </a>     
+        
+       
+
+        
+        </header>
+
+    <nav id="menu">
+        
+      
+                     
+                <a href = "#"  onclick="fecharMenu()"> &times;  Fechar </a>
+                <a href = "index2.html" > Home </a>     
+                <a href = "sobre.html" > Sobre </a>     
+                <a href = "Habilidades.html" > Habilidades </a>
+                <a href = "contato.html" > Contato </a>         
+           
+        
+    </nav>
+    <main >
+        <section>
+            <img src="./img/outlook.svg"></img>
+            <h1>raiane.ssantos@outlook.com </h1>
+            <h2>  
+            </h2>
+           
+        </section>
+
+        <section>
+            <h1></h1>
+             
+             <h2>
+             </h2>
+    
+        </section>
+        <section>
+        
+    
+ 
+
+        </section>
+            
+    
+        </main>
+           
+          
+          
+
+    
+    
+    <script>
+         function abrirMenu(){
+    
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+            document.getElementById('footerContent').style.marginLeft = '250px';
+    
+    
+            
+         }
+         function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+            document.getElementById('footerContent').style.marginLeft = '0px';
+            
+    
+         }
+    </script>
+    
+</body>
+</html>

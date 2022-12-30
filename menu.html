@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE2</title>
+
+<style>
+    body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:0px;
+        background-image: url(./img/background.jpg);
+        background-position: center center;
+    }
+    a{
+
+        text-decoration: none;
+        size: 15px;
+
+    }
+    header{
+        background-color: rgb(9, 9, 126);
+        padding: 10px;
+    }
+    .btn-abrir{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    nav{
+        height: 100%;
+        width: 0px;
+        background-color: rgb(9, 9, 126);
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        z-index: 1;
+        transition: width 0.3s;
+        
+    
+    }
+    nav a{
+         color: whitesmoke;
+         font-size: 25px;
+         display: block;
+         padding: 12px 10px 12px 32px ;
+         
+    }
+
+    nav a:hover{
+        background-color: whitesmoke;
+        color:rgb(9, 9, 126)
+    }
+    main{
+        padding: 20px;
+        transition: margin-left 0.5s;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+       
+        text-align: center;
+    }
+    .container{
+        font-style: oblique;
+    }
+    main img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid rgb(23, 0, 124);
+    }
+    footer{
+        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding-top: 5%;
+        
+        
+      
+    }
+    a h4{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0px;
+    white-space: none;
+    font-size: 12px;
+
+
+
+}
+    footer img{
+        width: 50px;
+        height: 50px;
+        margin:0px 10px;
+        padding-block-end: 1px;
+        
+
+        
+   
+       
+    }
+    footer img:hover{
+        background-color: rgb(253, 253, 255);
+        border-radius: 50px;
+        border: 50px;
+    }
+</style>
+</head>
+<body>
+    <header>
+
+        <a href = "#" class=" btn-abrir" onclick="abrirMenu()" > &#9776;  MENU </a>     
+        
+       
+
+        
+        </header>
+
+    <nav id="menu">
+        
+      
+                     
+                <a href = "#"  onclick="fecharMenu()"> &times;  Fechar </a>
+                <a href = "index2.html" > Home </a>     
+                <a href = "sobre.html" > Sobre </a>     
+                <a  href="Habilidades.html" > Habilidades </a>
+                <a href = "contato.html" > Contato </a>         
+           
+        
+    </nav>
+    <main id="conteudo">
+        <img src="./img/raia.jpg"> </img>
+
+        <h1>Raiane Santos</h1>
+        
+        <h2 class="container"> Desenvolvedora Back-End</h2>
+           
+          
+          
+
+    </main>
+    
+    <script>
+         function abrirMenu(){
+    
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+            document.getElementById('footerContent').style.marginLeft = '250px';
+    
+    
+            
+         }
+         function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+            document.getElementById('footerContent').style.marginLeft = '0px';
+            
+    
+         }
+    </script>
+    
+</body>
+<footer id = "footerContent">
+    <a href="https://github.com/raiadev" target= "_blank" rel="noopener noreferrer"> 
+        <img src= "./img/git.png"></img>
+        <h4> Github</h4>
+    </a>
+    <a href="www.linkedin.com/in/raiane-santos-dev
+    "target= "_blank" rel="noopener noreferrer">
+    <img src= "./img/linkedin.svg"></img>
+    <h4>Linkedin</h4>
+
+    </a>
+   
+</footer>
+</html>
